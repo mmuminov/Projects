@@ -32,6 +32,33 @@ DateTime date = DateTime.Now;
 Console.WriteLine(date);
 
 
+// value va reference tiplari uchun
+
+char harf = 'j';
+Console.WriteLine(harf);
+
+int num3 = 1234;
+Console.WriteLine(num3);
+
+string gap = "hello Namangan";
+Console.WriteLine(gap);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

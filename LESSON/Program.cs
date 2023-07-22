@@ -30,6 +30,9 @@ Console.WriteLine("Talabalar ro'yxati ");
 Console.WriteLine("1 dan 4 gacha raqam kiriting ");
 Console.WriteLine("1 : Id va Fullname");
 Console.WriteLine("2 tolovlar");
+Console.WriteLine("3 Student qoshish: ");
+Console.WriteLine("4 talaba uchirish: ");
+
 
 int a = Convert.ToInt32(Console.ReadLine());
 //int b = Convert.ToInt32(Console.ReadLine());
@@ -52,18 +55,65 @@ switch (a)
         break;
     case 2:
         {
-            //Console.WriteLine("tolovlar");
-            //var tanlash = Console.ReadLine();
-            
+            Console.WriteLine("tolovlar");
+            var tanlash = Console.ReadLine();
+
             foreach (var item in student)
             {
-                //if ((item.Payment - item.PaymentAmount) < 0)
-                //{
-                Console.WriteLine(item.FullName.PadRight(46, ' ') + "\t" + item.Payment + "  Umumiy tolashi kerak bolgan puli ".PadRight(40, ' ') + item.GetAmount().PadRight(30,' '));
-                //}
+                if ((item.Payment - item.PaymentAmount) < 0)
+                {
+                    Console.WriteLine(item.FullName.PadRight(46, ' ') + "\t" + item.Payment + "  Umumiy tolashi kerak bolgan puli ".PadRight(40, ' ') + item.GetAmount().PadRight(30, ' '));
+                }
             }
         }
         break;
+    case 3:
+        {
+            foreach(var item in student)
+            {
+                Console.WriteLine($"{item.Id} {item.FullName.PadRight(45, ' ')}");
+
+            }
+            Console.Write("FIO");
+            string FIO = Console.ReadLine();
+
+            Console.Write("Yunalish: ");
+            string EduType = Console.ReadLine();
+
+            student.Add(new Student
+            {
+                Id = student.Last().Id + 1,
+                FullName = FIO,
+                BirthDay = DateTime.Now,
+                EduType = EduType
+            });
+            
+            foreach (var item in student)
+            {
+                Console.WriteLine($"{item.Id} {item.FullName.PadRight(45, ' ')}");
+            }
+        }
+        break;
+    case 4:
+    {
+        foreach (var item in student)
+        {
+            Console.WriteLine($"{item.Id} {item.FullName.PadRight(45, ' ')}");
+
+        }
+        
+        Console.Write("uchirmoqchi bolgan talabani Id sini kiriting: ");
+        int raqam = Int32.Parse(Console.ReadLine());
+        
+        student.RemoveAt(raqam - 1);
+        
+            foreach (var item in student)
+            {
+                Console.WriteLine($"{item.Id} {item.FullName.PadRight(45, ' ')}");
+            }
+        }
+        break;
+
 }
 
 
@@ -81,7 +131,7 @@ switch (a)
 
 
 
-Console.WriteLine(Guid.NewGuid().ToString());   
+//Console.WriteLine(Guid.NewGuid().ToString());
 
 
 
@@ -106,7 +156,7 @@ Console.WriteLine("Talabalar ro'yxati ");
 Console.WriteLine("1 dan 4 gacha raqam kiriting ");
 
 int a = Convert.ToInt32(Console.ReadLine());
-//int b = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 
 switch(a)
     { 
@@ -216,4 +266,6 @@ Console.WriteLine("Choose your symbol ('X' or 'O'):");
 char symbol = char.ToUpper(Console.ReadKey().KeyChar);
 """
 */
+
+
 

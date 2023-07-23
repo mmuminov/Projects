@@ -1,14 +1,27 @@
 ﻿using System.Net.Mail;
 using System.Text.RegularExpressions;
 
+
+string email;
 Console.WriteLine("Email checcer!\n\n");
-Console.WriteLine("Iltimos email ni kiriting: ");
-var email = Console.ReadLine();
+do
+{
+    Console.WriteLine("Iltimos email ni kiriting: ");
+    email = Console.ReadLine();
+}
+while (string.IsNullOrWhiteSpace(email));
 
 var emailAddresRejax = new Regex("^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+$");
-var emailAddrePatttern = @"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$";
-Console.WriteLine(Regex.IsMatch(email, emailAddrePatttern));
-Console.WriteLine(emailAddresRejax.IsMatch(email));
+var emailAddresPatttern = @"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$";
+if(!Regex.IsMatch(email, emailAddresPatttern))
+{
+    Console.WriteLine("Siz Kiritgan email notori: ");
+}
+else
+{
+    Console.WriteLine(email + "\nGood");
+}
+
 
 
 

@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hometask 3", "Hometask 3\Ho
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N3", "N3", "{D40A45D2-6F3E-406C-B619-0BC50A2C6269}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Home Task", "Home Task\Home Task.csproj", "{04901DA0-D064-46D5-9C9A-04DDA0DEC80F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pasword Generator Home Task", "Home Task\Pasword Generator Home Task.csproj", "{04901DA0-D064-46D5-9C9A-04DDA0DEC80F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N7", "N7", "{0908074D-A58C-47DF-948C-2E7098C379F2}"
 EndProject
@@ -45,7 +45,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson task 1", "lesson tas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson task2", "lesson task2\lesson task2.csproj", "{BCE1ADD1-5DCF-460C-B75B-E68C00824529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homettask 2", "Homettask 2\Homettask 2.csproj", "{30F7FF5A-2595-417F-9657-CD4705D00B34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailCheker Homettask 2", "Homettask 2\EmailCheker Homettask 2.csproj", "{30F7FF5A-2595-417F-9657-CD4705D00B34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N4", "N4", "{C2C2AB61-428F-415F-80A0-CA2562CEFB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Essay analize Hometask", "Essay analize Hometask\Essay analize Hometask.csproj", "{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,10 @@ Global
 		{30F7FF5A-2595-417F-9657-CD4705D00B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30F7FF5A-2595-417F-9657-CD4705D00B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30F7FF5A-2595-417F-9657-CD4705D00B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +133,7 @@ Global
 		{3B177959-4EA2-486B-8DA2-222DF1F9E663} = {E1940514-02B5-4DA3-9CA4-04D6BCE7C8C6}
 		{BCE1ADD1-5DCF-460C-B75B-E68C00824529} = {E1940514-02B5-4DA3-9CA4-04D6BCE7C8C6}
 		{30F7FF5A-2595-417F-9657-CD4705D00B34} = {D40A45D2-6F3E-406C-B619-0BC50A2C6269}
+		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92} = {C2C2AB61-428F-415F-80A0-CA2562CEFB4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD7813DC-113A-42B0-AB45-847C73BE8079}

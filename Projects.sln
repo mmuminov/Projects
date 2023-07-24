@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N4", "N4", "{C2C2AB61-428F-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Essay analize Hometask", "Essay analize Hometask\Essay analize Hometask.csproj", "{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Username generator", "Username generator\Username generator.csproj", "{91516009-27DB-41C2-9EB1-270C2574D2A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91516009-27DB-41C2-9EB1-270C2574D2A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91516009-27DB-41C2-9EB1-270C2574D2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91516009-27DB-41C2-9EB1-270C2574D2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91516009-27DB-41C2-9EB1-270C2574D2A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +140,7 @@ Global
 		{BCE1ADD1-5DCF-460C-B75B-E68C00824529} = {E1940514-02B5-4DA3-9CA4-04D6BCE7C8C6}
 		{30F7FF5A-2595-417F-9657-CD4705D00B34} = {D40A45D2-6F3E-406C-B619-0BC50A2C6269}
 		{9D3C59BB-BCEF-4077-B6D6-C3E66E8D2E92} = {C2C2AB61-428F-415F-80A0-CA2562CEFB4D}
+		{91516009-27DB-41C2-9EB1-270C2574D2A5} = {C2C2AB61-428F-415F-80A0-CA2562CEFB4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD7813DC-113A-42B0-AB45-847C73BE8079}

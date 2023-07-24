@@ -21,15 +21,15 @@ for (int i = 0; i <= AllWords.Length - 1; i++)
 }
 for (int i = 0; i < AllWords.Length - 1; i++)
 {
-    int count = 0;
+    int num = 0;
     for (int j = i; j < AllWords.Length - 1; j++)
     {
         if (AllWords[i] == AllWords[j])
         {
-            count += 1;
+            num += 1;
         }
     }
-    if (count >= 100)
+    if (num >= 100)
     {
         ball -= 5;
     }
@@ -50,22 +50,26 @@ for (int i = 0; i < AllWords.Length; i++)
     }
 }
 
+bool count = false;
 
-for (int i = 0; i <= AllWords.Length-1; i++)
+string[] AllSentences = essay.Split('.', '?', '!');
+foreach (var i in AllSentences)
 {
-    if (AllWords[i][i] != '.')
+    for(var j = 1;j < i.Length;j++)
+    {
+        if (i[j] >= 'A' && i[j] <='Z')
         {
-        char harf = AllWords[i][i];
-
-        if (char.IsUpper(harf))
-        {
-             ball -= 10;
-            Console.WriteLine(harf);
-            Console.WriteLine(ball);
-
+            count = true; break;
         }
+
     }
 }
+
+if(count == true)
+{
+    ball -= 10;
+}
+Console.WriteLine(ball);
 
 //foreach (int i in AllWords)
 //{

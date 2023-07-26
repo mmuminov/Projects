@@ -2,7 +2,6 @@
 
 Console.WriteLine("Essay analizer: ");
 int ball = 100;
-var words = 500;
 var essay = "Lorem ipsum dolor sit amet consectetur adipisicing elit. quaerat est quas commodi quibusdam labore, nihil doloribus quam temporibus inventore optio expedita consectetur voluptatem QUIDEM nulla soluta earum. Numquam rem alias minima culpa iste distinctio. Eum similique est consequuntur minus, odio nisi recusandae iure asperiores facere, reiciendis voluptate maiores! Repellat, dolorum!";
 string[] AllWords = essay.Split(' ');
 

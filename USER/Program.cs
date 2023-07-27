@@ -1,4 +1,6 @@
-﻿var userName = new List<USER>();
+﻿using System.Net.Mail;
+
+var userName = new List<USER>();
 userName.Add(new USER { name = "Peter", secondName = "Michael", lastName = "Brown" });
 userName.Add(new USER { name = "John", secondName = "David", lastName = "Smith" });
 userName.Add(new USER { name = "Mary", secondName = "Anne", lastName = "Jones" });
@@ -40,6 +42,8 @@ public class USER
     public string secondName;
     public string lastName;
 
+    //public string fullname => $"{name} {secondName} {lastName}";
+
     public override bool Equals(object? obj)
     {
         if(obj is USER userName)
@@ -48,6 +52,8 @@ public class USER
         }
         return false;
     }
+    
+
     public override int GetHashCode()
     {
         return this.name.GetHashCode() + this.secondName.GetHashCode() + this.lastName.GetHashCode();

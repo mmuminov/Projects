@@ -8,5 +8,11 @@ namespace Rectangle
 {
     internal class POINT
     {
+        public POINT(double x, double y) 
+        {
+            
+        }
+        public double x { get; set; }
+        public double y { get; set; }
     }
 }

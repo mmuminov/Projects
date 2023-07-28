@@ -27,6 +27,8 @@ Console.WriteLine($"IT is the valids: \n{email}");
 
 
 
+
+
 public class Email
 {
     public string _to;
@@ -72,7 +74,6 @@ public class Email
 
         }
     }
-
     public string SUBJECT
     {
         get => _subject;

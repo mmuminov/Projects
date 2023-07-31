@@ -1,4 +1,4 @@
-﻿//animal uchun Animal modelidan foydalaning unda FunFact methodi bo'lsin
+﻿    //animal uchun Animal modelidan foydalaning unda FunFact methodi bo'lsin
 //- FunFact methodi parametersiz shunchaki qiziqarli faktni ekranga chiqarsin
 //- Animal dan 3 ta hayvon turi uchun tip yarating
 //- ularda FunFact methodini e'lon qliing

@@ -24,4 +24,9 @@ public class BankAccount
     public string firstName;
     public string lastName;
     public int depozit;
+    
+    public class hello
+    {
+
+    }
 }

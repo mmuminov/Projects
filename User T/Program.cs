@@ -32,7 +32,9 @@ var user = new User
 Console.WriteLine($"Firstname: {user.FirstName}");
 Console.WriteLine($"Lastname:  {user.LastName}");
 Console.WriteLine($"Age:       {user.Age}");
-public class User
+
+
+ public class User
 {
     public string FirstName;
     public string LastName;

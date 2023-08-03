@@ -49,5 +49,5 @@
 SmartHome smartHome = new SmartHome(false, "Shittel", 100, 20);
 
 smartHome.ExpectedTemperature = 30;
-smartHome.CurrentTemperature = 25;
+smartHome.CurrentTemperature = 23;
 smartHome.DisplayHomeTemperature();

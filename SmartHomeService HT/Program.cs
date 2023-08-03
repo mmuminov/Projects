@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-using System.Reflection.Metadata;
-using System.Xml.Linq;
+﻿using SmartHomeService_HT;
 
 //-SmartHomeService dan foydalaning
 
@@ -46,25 +44,10 @@ using System.Xml.Linq;
 //-method parameter types(in, out, ref, params, optional, named )
 
 
-public class SmartHomeService
-{
-    private readonly bool _isActivated;
-    public bool IsActivated => _isActivated;
-
-    public string Name{ get; init;}
-
-    private string _currentTemperature;
-    public double CurrentTemperature
-    {
-        set
-        {
-            _currentTemperature = value;
-        }
-    }
-
-}
 
 
+SmartHome smartHome = new SmartHome(false, "Shittel", 100, 20);
 
-
-
+smartHome.ExpectedTemperature = 30;
+smartHome.CurrentTemperature = 25;
+smartHome.DisplayHomeTemperature();

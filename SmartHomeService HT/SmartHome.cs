@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-//-SmartHomeService dan foydalaning
+﻿//-SmartHomeService dan foydalaning
 
 //unda quyidagi propertylar bo'lsin 
 //- IsActivated - hozir SmartHome ishlayotgan yoki yo'qligini bildiradi ( read-only )
@@ -17,6 +11,82 @@ using System.Threading.Tasks;
 //- DisplayHomeTemperature - bunda vaqt davomida foydalanuvchi xohlagan va SmartHome ta'minlay olgan temperatura chiqsin
 
 //- temperaturani expected va current qiymatlarini saqlash uchun Temperature modelidan foydalanish mumkin
+
+namespace SmartHomeService_HT;
+
+public class SmartHome
+{
+    private bool _isActivated;
+    public bool IsActivated { get => _isActivated; }
+    private string _deviceName { get; init; }
+    private double _currentTemperature;
+    
+    private List<ValueTuple<double, double>> temperatures = new List<ValueTuple<double, double>>();
+
+    private double _expectedTemperature;
+
+    public double ExpectedTemperature 
+    { 
+        get { return _expectedTemperature; } 
+        set { _expectedTemperature = value; } 
+    }
+    
+    public double CurrentTemperature
+    {
+        set
+        {
+            _currentTemperature = value;
+            temperatures.Add(new ValueTuple<double, double>(_currentTemperature, ExpectedTemperature));
+        }
+    }
+
+    public SmartHome(bool isactivated, string devicename, double currenttemperature, double expectedtemperature)
+    {
+        _isActivated = isactivated;
+        _deviceName = devicename;
+        _currentTemperature = currenttemperature;
+        _expectedTemperature = expectedtemperature;
+        temperatures.Add(new ValueTuple<double, double>(currenttemperature, expectedtemperature));
+
+    }
+
+    public bool Activate(bool isactivate)
+    {
+        if (isactivate == false)
+        {
+            isactivate = true;
+        }
+        return isactivate;
+    }
+
+    public void DisplayHomeTemperature()
+    {
+        double temperature;
+        try
+        {
+            temperature = temperatures.LastOrDefault().Item1;
+        }
+        catch 
+        {
+            Console.WriteLine("Current temperature not found.");
+            return;
+        }
+        if (IsActivated == true)
+            Console.WriteLine($"Device name : {_deviceName}\nStatus : Activated\nCurrent temperature : {temperature}");
+        else
+            Console.WriteLine($"Device name : {_deviceName}\nStatus : Not Activated\nCurrent temperature : {temperature}");
+    }
+
+    /*public string display(string fullname)
+    {
+        Console.WriteLine(fullname);
+        return fullname;
+    }*/
+}
+
+
+
+
 
 //Exmaple
 
@@ -43,16 +113,5 @@ using System.Threading.Tasks;
 //Expected - 25, Current - 23
 
 
-//- class types( sealed, abstract, static )
-//-constructor types(default, parameterized, copy, static, private )
-//-method parameter types(in, out, ref, params, optional, named )
 
-
-namespace SmartHomeService_HT
-{
-    internal class SmartHome
-    {
-
-    }
-}
 

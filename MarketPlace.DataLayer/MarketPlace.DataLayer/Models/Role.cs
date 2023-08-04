@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 namespace MarketPlace.DataLayer.Models
 {
     internal class Role
-    {
+    { 
+
+
     }
 }
+

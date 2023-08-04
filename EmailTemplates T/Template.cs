@@ -33,24 +33,6 @@ using System.Threading.Tasks;
 //Subject : Account Blocked
 //Content :  Hurmatli {{User}}, ushbu xabar sizni akkountingiz bloklanganini bildirish uchun yuborildi
 
-//N17-T2
-
-//Shape abstract modelidan foydalaning
-
-//unda quyidagi abstract methodlar bo’lsin
-
-//- CalculateShape - double tipida yuzani hisoblasin
-
-//Circle sealed modelidan foydalaning -Shape modelidan inheritance olgan bo’lsin
-
-//unda quyidagi konstruktorlar bo’lsin
-
-//- Circle ( radius )
-
-//unda quyidagi methodlarni override qiling
-
-//- CalculateShape
-
 
 namespace EmailTemplates_T
 {
